@@ -1,0 +1,120 @@
+.card-body .car-thumbnail>img {
+    height: 300px;
+    width: 750px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.card-body .gallery-img>img {
+    height: 100px;
+    width: 140px;
+    object-fit: fill;
+    border-radius: 3%;
+    border: 2px solid black;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-body {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-header {
+    background-color: rgba(243, 243, 243, 0.932);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+#sidebar-content {
+    font-weight: bold;
+    font-family: Georgia, serif;
+    animation: slideIn 1.0s ease-in-out forwards;
+}
+
+p {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+h6 {
+    margin-left: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.card-header>h3 {
+    font-weight: bolder;
+}
+
+.sticky-sidebar {
+    position: sticky;
+    top: 30px;
+}
+
+a {
+    color: black;
+}
+
+/*Banner Style */
+
+#content>.ast-container {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+#primary>.home-banner {
+    display: inline-block;
+    object-fit: cover;
+    position: relative;
+    overflow: hidden;
+    height: 60vh;
+    width: 100%;
+    margin: 0 0 20px 0;
+    box-sizing: content-box;
+}
+
+.banner-image>img {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.banner-text {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 5vw;
+    position: absolute;
+    top: 100%; /* Initially set to the bottom of its container */
+    left: 30%;
+    transform: translate(-50%, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    animation: slideUp 0.5s ease forwards; /* Use CSS animation */
+}
+
+@keyframes slideUp {
+    0% {
+        top: 70%; /* Start from the bottom */
+    }
+    100% {
+        top: 50%; /* Slide up to the middle */
+    }
+}

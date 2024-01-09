@@ -1,0 +1,64 @@
+/* Styles for both normal and hover states */
+.card-body .car-thumbnail > img {
+    height: 250px;
+    width:320px;
+    object-fit: fill;
+}
+
+.card-body .gallery-img > img {
+    height: 80px;
+    width: 100px;
+    object-fit: fill;
+}
+
+.card {
+    transition: transform 0.2s;
+    transform: scale(1); /* Add initial scale to reset when not hovered */
+    box-shadow: none; /* Add no shadow initially */
+    background-color: transparent; /* Add a transparent background initially */
+}
+
+#primary > h1 {
+    font-family: Roboto;
+    margin-bottom: 20px;
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: black;
+}
+
+/* Hover styles for the card */
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 10px 10px 5px rgb(170, 175, 177);
+    background-color: rgba(255, 255, 255, 0.959);
+}
+
+p {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.card-header > h3 {
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.enquiry-button, .chat-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.benquiry-button,.chat-button:hover {
+    background-color: #0056b3;
+}

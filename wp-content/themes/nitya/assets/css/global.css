@@ -1,0 +1,35 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+:root{
+    --color-black:#000;
+    --margin-small:1rem;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.card-header, .card-body{
+    text-decoration: none;
+    color:var(--color-black);
+}
+
+.card-header, .card-body :hover{
+    text-decoration: none;
+}
+
+a{
+    color: #000;
+}
+a:hover{
+    text-decoration: none;
+}
+
+body.logged-in .create-account{
+    display: none;
+}
+.user-dashboard{
+    display: none !important;
+}
+body.logged-in .user-dashboard{
+    display: block !important;
+}
+

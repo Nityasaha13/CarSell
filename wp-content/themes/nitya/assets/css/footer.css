@@ -1,0 +1,39 @@
+.myFooter {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.footer-column {
+    width: fit-content;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.footer-column a {
+    color: #fff;
+}
+
+.footer-column strong {
+    text-decoration: none; 
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+.footer-column strong::after {
+    content: ""; /* Create a pseudo-element for the custom underline */
+    display: block;
+    width: 100%;
+    height: 2px; /* Adjust the thickness of the underline as needed */
+    background-color: #ff0000; /* Set the color of the underline */
+    position: absolute;
+    left: 0;
+}
+
+.footer-column p:hover {
+    transform: scale(1.04);
+}
